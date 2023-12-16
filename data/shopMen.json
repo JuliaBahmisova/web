@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "title": "Товар 1",
+    "vendor_code": "111",
+    "description": "Описание 1",
+    "price": 100,
+    "img": "./img/Longsliv.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Товар 2",
+    "vendor_code": "222",
+    "description": "Описание 2",
+    "price": 200,
+    "img": "./img/T-short.jpg"
+  }
+]
