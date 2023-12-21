@@ -11,16 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;400;600;700&display=swap" rel="stylesheet">
     <title>Website</title>
 </head>
-
 <body>
     <div class="container">
-        <header class="card" style="height: 3.rem; background-color:rgba(74, 246, 246, 0.2)">
+        <header class="card" style="height: 3.rem; margin-bottom: 10px; background-color:rgba(108, 245, 245, 0.2)">
             <div class="card-body bg-color" style="display: flex;        
         justify-content: space-between;
         align-items: center; font-family: Osvald; font-size: 80%;">
                 <img height="40px" src="./img/Logo.png">
                 <h5 class="card-title">Женская коллекция</h5>
-                <a href="index.html">
+                <a href="index.html" name="top">
                     <button type="button" class="btn btn-outline-info">На главную</button>
                 </a>
             </div>
@@ -33,18 +32,24 @@
                       Сортировать
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                      <li><button class="dropdown-item" type="button">По возрастанию цены </button></li>
-                      <li><button class="dropdown-item" type="button">По убыванию цены</button></li>
-                      <li><button class="dropdown-item" type="button">По алфавиту</button></li>
+                      <li><button class="dropdown-item" type="button" onclick="filterPrice('high')">По возрастанию цены</button></li>
+                      <li><button class="dropdown-item" type="button" onclick="filterPrice('low')">По убыванию цены</button></li>
+                      <li><button class="dropdown-item" type="button" onclick="sortAsc()">По алфавиту</button></li>
                     </ul>
-                  </div>
-                <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                  </div>              
+            </div>
+            <div class="card-body">
+                <form  id="UserEnter" name="UserEnter">
                     <input name="q" type="hidden" value="search">
                     <ul class="d-flex flex-row flex-wrap justify-content-around bg-light" id="node_for_insert">
                     </ul>
-                    <button type="button" class="btn btn-outline-info">Корзина</button>
+                    <div class="d-flex flex-row flex-wrap justify-content-between">
+                        <input class="btn btn-primary" type="Submit" value="корзина">
+                        <a class="text-reset text-decoration-none"
+                        href="#top"> <button type="button" class="btn btn-light">На верх</button></a>
+                    </div>
                 </form>
-            </div>
+            </div>            
         </div>
         <div class="card">
             <div class="card-body">
@@ -59,6 +64,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="./JS/indexWomen.js"></script>
+    <script src="./JS/sord.js"></script>
 </body>
 
 </html>

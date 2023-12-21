@@ -32,9 +32,9 @@ async function getResponce() {
         <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
         <img style="width: 180px" class="align-self-center" src=${content[key].img}>
         <h5 class="card-title">${content[key].title}</h5>
-        <p class="card-text">${content[key].description}.<br> Цена ${content[key].price} р.</p>
+        <p class="card-text">${content[key].description}. Цена <p class="card-text font-weight-bold price">${content[key].price}</p> р.</p>
         <input type="hidden" name= "vendor_code" value=${content[key].vendor_code}>
-        <p class="card-text" >Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+        <p class="card-text" >Заказать <input class="w-25" type="number" name="amount" min="0" value="0"></p>
         </li>                `
     }
 }
